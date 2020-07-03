@@ -53,7 +53,7 @@ function setBgGreet(){
 		greeting.textContent= 'Good afternoon';
 		document.body.style.backgroundSize='Cover';
 	} else{ // evening
-		document.body.style.backgroundImage="url(../img/evening.jpg)";
+		document.body.style.backgroundImage="url(./img/night.jpg)";
 		greeting.textContent= 'Good Evening';
 		document.body.style.color= 'white';
 		document.body.style.backgroundSize='Cover';
@@ -87,7 +87,7 @@ function setName(e){
 //Get focus
 function getFocus(){
 	if (localStorage.getItem('focus')=== null) {
-		focus.textContent='{Enter focus}';
+		focus.textContent='{Enter name}';
 	} else {
 		focus.textContent = localStorage.getItem('focus');
 	}
